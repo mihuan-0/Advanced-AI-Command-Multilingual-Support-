@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Advanced AI Command">
+	<Package name="AICommand">
+			<Key ID="STR_Add_Waypoints">
+				<Original>Add Waypoints</Original>
+				<English>Add Waypoints</English>
+                <Chinesesimp>添加航路点</Chinesesimp>
+                <Chinese>添加航路點</Chinese>
+				<French>Ajouter des Waypoints</French>
+			</Key>
+			<Key ID="STR_Color_Setto">
+				<Original>Color set to </Original>
+				<English>Color set to </English>
+                <Chinesesimp>小队颜色设置为 </Chinesesimp>
+                <Chinese>小隊顏色設置為 </Chinese>
+				<French>Couleur réglée sur </French>
+			</Key>
+			<Key ID="STR_TAG_Red">
+				<Original>Red</Original>
+				<English>Red</English>
+                <Chinesesimp>红色</Chinesesimp>
+                <Chinese>紅色</Chinese>
+				<French>Rouge</French>
+			</Key>
+			<Key ID="STR_TAG_Blue">
+				<Original>Blue</Original>
+				<English>Blue</English>
+                <Chinesesimp>蓝色</Chinesesimp>
+                <Chinese>藍色</Chinese>
+				<French>Bleu</French>
+			</Key>
+			<Key ID="STR_TAG_Green">
+				<Original>Green</Original>
+				<English>Green</English>
+                <Chinesesimp>绿色</Chinesesimp>
+                <Chinese>綠色</Chinese>
+				<French>Vert</French>
+			</Key>
+			<Key ID="STR_TAG_Black">
+				<Original>Black</Original>
+				<English>Black</English>
+                <Chinesesimp>黑色</Chinesesimp>
+                <Chinese>黑色</Chinese>
+				<French>Noir</French>
+			</Key>
+			<Key ID="STR_TAG_White">
+				<Original>White</Original>
+				<English>White</English>
+                <Chinesesimp>白色</Chinesesimp>
+                <Chinese>白色</Chinese>
+				<French>Blanc</French>
+			</Key>
+			<Key ID="STR_Set_GroupColor">
+				<Original>Set Group Color</Original>
+				<English>Set Group Color</English>
+                <Chinesesimp>小队颜色</Chinesesimp>
+                <Chinese>小隊顏色</Chinese>
+				<French>Définir la couleur du groupe</French>
+			</Key>
+			<Key ID="STR_Behaviour_Setto">
+				<Original>Behaviour set to </Original>
+				<English>Behaviour set to </English>
+                <Chinesesimp>小队行为设置为</Chinesesimp>
+                <Chinese>小隊行為設置為</Chinese>
+				<French>Comportement réglé sur </French>
+			</Key>
+			<Key ID="STR_TAG_Careless">
+				<Original>Careless</Original>
+				<English>Careless</English>
+                <Chinesesimp>粗心</Chinesesimp>
+                <Chinese>粗心</Chinese>
+				<French>Insouciance</French>
+			</Key>
+			<Key ID="STR_TAG_Safe">
+				<Original>Safe</Original>
+				<English>Safe</English>
+                <Chinesesimp>安全</Chinesesimp>
+                <Chinese>安全</Chinese>
+				<French>Sur</French>
+			</Key>
+			<Key ID="STR_TAG_Aware">
+				<Original>Aware</Original>
+				<English>Aware</English>
+                <Chinesesimp>感知</Chinesesimp>
+                <Chinese>感知</Chinese>
+				<French>Conscients</French>
+			</Key>
+			<Key ID="STR_TAG_Combat">
+				<Original>Combat</Original>
+				<English>Combat</English>
+                <Chinesesimp>战斗</Chinesesimp>
+                <Chinese>戰鬥</Chinese>
+				<French>Combat</French>
+			</Key>
+			<Key ID="STR_TAG_Stealth">
+				<Original>Stealth</Original>
+				<English>Stealth</English>
+                <Chinesesimp>秘密行动</Chinesesimp>
+                <Chinese>秘密行動</Chinese>
+				<French>Furtif</French>
+			</Key>
+			<Key ID="STR_Set_GroupBehaviour">
+				<Original>Set Group Behaviour</Original>
+				<English>Set Group Behaviour</English>
+                <Chinesesimp>小队行为</Chinesesimp>
+                <Chinese>小隊行為</Chinese>
+				<French>Définir le comportement du groupe</French>
+			</Key>
+			<Key ID="STR_Selected_GroupJoined">
+				<Original>Selected Group Joined</Original>
+				<English>Selected Group Joined</English>
+                <Chinesesimp>已加入选定的小队</Chinesesimp>
+                <Chinese>已加入選定的小隊</Chinese>
+				<French>Groupe sélectionné Rejoint</French>
+			</Key>
+			<Key ID="STR_TAG_NoGroupSelected">
+				<Original>No Group Selected</Original>
+				<English>No Group Selected</English>
+                <Chinesesimp>未选定小队</Chinesesimp>
+                <Chinese>未選定小隊</Chinese>
+				<French>Aucun groupe sélectionné</French>
+			</Key>
+			<Key ID="STR_Join_AGroup">
+				<Original>Join A Group</Original>
+				<English>Join A Group</English>
+                <Chinesesimp>加入一个小队</Chinesesimp>
+                <Chinese>加入一個小隊</Chinese>
+				<French>Rejoindre un groupe</French>
+			</Key>
+			<Key ID="STR_Group_Size">
+				<Original>Group Size</Original>
+				<English>Group Size</English>
+                <Chinesesimp>小队规模</Chinesesimp>
+                <Chinese>小隊規模</Chinese>
+				<French>Taille du groupe</French>
+			</Key>
+			<Key ID="STR_Group_SplitinHalf">
+				<Original>Group Split in Half</Original>
+				<English>Group Split in Half</English>
+                <Chinesesimp>小队已拆分两半</Chinesesimp>
+                <Chinese>小隊已拆分兩半</Chinese>
+				<French>Diviser le groupe en deux</French>
+			</Key>
+			<Key ID="STR_TAG_InHalf">
+				<Original>In Half</Original>
+				<English>In Half</English>
+                <Chinesesimp>拆分</Chinesesimp>
+                <Chinese>拆分</Chinese>
+				<French>En deux</French>
+			</Key>
+			<Key ID="STR_Split_Group">
+				<Original>Split Group</Original>
+				<English>Split Group</English>
+                <Chinesesimp>拆分</Chinesesimp>
+                <Chinese>拆分</Chinese>
+				<French>Groupe scindé</French>
+			</Key>
+			<Key ID="STR_Group_SplitIndividual">
+				<Original>Group Split into Individual Units</Original>
+				<English>Group Split into Individual Units</English>
+                <Chinesesimp>小队拆分为独立单位</Chinesesimp>
+                <Chinese>小隊拆分為獨立單位</Chinese>
+				<French>Répartition du groupe en unités individuelles</French>
+			</Key>
+			<Key ID="STR_Into_Individual">
+				<Original>Into Individual Units</Original>
+				<English>Into Individual Units</English>
+                <Chinesesimp>拆分为独立单位</Chinesesimp>
+                <Chinese>拆分為獨立單位</Chinese>
+				<French>En unités individuelles</French>
+			</Key>
+			<Key ID="STR_Speed_Setto">
+				<Original>Speed set to </Original>
+				<English>Speed set to </English>
+                <Chinesesimp>行进速度设置为</Chinesesimp>
+                <Chinese>行進速度設置為</Chinese>
+				<French>Vitesse réglée sur </French>
+			</Key>
+			<Key ID="STR_Group_Speed">
+				<Original>Set Group Speed</Original>
+				<English>Set Group Speed</English>
+                <Chinesesimp>小队行进速度</Chinesesimp>
+                <Chinese>小隊行進速度</Chinese>
+				<French>Régler la vitesse du groupe</French>
+			</Key>
+			<Key ID="STR_Half_Speed">
+				<Original>Half Speed</Original>
+				<English>Half Speed</English>
+                <Chinesesimp>半速</Chinesesimp>
+                <Chinese>半速</Chinese>
+				<French>Normal</French>
+			</Key>
+			<Key ID="STR_Full_InFormation">
+				<Original>Full Speed (In Formation)</Original>
+				<English>Full Speed (In Formation)</English>
+                <Chinesesimp>全速(编队)</Chinesesimp>
+                <Chinese>全速(編隊)</Chinese>
+				<French>Pleine vitesse (En formation)</French>
+			</Key>
+			<Key ID="STR_Full_NoFormation">
+				<Original>Full (No Formation)</Original>
+				<English>Full (No Formation)</English>
+                <Chinesesimp>全速(无编队)</Chinesesimp>
+                <Chinese>全速(無編隊)</Chinese>
+				<French>Complet (sans formation)</French>
+			</Key>
+			<Key ID="STR_Formation_Setto">
+				<Original>Formation set to </Original>
+				<English>Formation set to </English>
+                <Chinesesimp>队形设置为 </Chinesesimp>
+                <Chinese>隊形設置為 </Chinese>
+				<French>La formation est fixée à </French>
+			</Key>
+			<Key ID="STR_Group_Formation">
+				<Original>Set Group Formation</Original>
+				<English>Set Group Formation</English>
+                <Chinesesimp>小队队形</Chinesesimp>
+                <Chinese>小隊隊形</Chinese>
+				<French>Définir la formation du groupe</French>
+			</Key>
+			<Key ID="STR_TAG_Column">
+				<Original>Column</Original>
+				<English>Column</English>
+                <Chinesesimp>纵队</Chinesesimp>
+                <Chinese>縱隊</Chinese>
+				<French>Colonne</French>
+			</Key>
+			<Key ID="STR_TAG_StagColumn">
+				<Original>Stag. Column</Original>
+				<English>Stag. Column</English>
+                <Chinesesimp>锯齿形纵队</Chinesesimp>
+                <Chinese>鋸齒形縱隊</Chinese>
+				<French>Stag. Column</French>
+			</Key>
+			<Key ID="STR_TAG_Wedge">
+				<Original>Wedge</Original>
+				<English>Wedge</English>
+                <Chinesesimp>楔形</Chinesesimp>
+                <Chinese>楔形</Chinese>
+				<French>coincer</French>
+			</Key>
+			<Key ID="STR_TAG_EchelonLeft">
+				<Original>Echelon Left</Original>
+				<English>Echelon Left</English>
+                <Chinesesimp>左梯队</Chinesesimp>
+                <Chinese>左梯隊</Chinese>
+				<French>Echelon Gauche</French>
+			</Key>
+			<Key ID="STR_TAG_EchelonRight">
+				<Original>Echelon Right</Original>
+				<English>Echelon Right</English>
+                <Chinesesimp>右梯队</Chinesesimp>
+                <Chinese>右梯隊</Chinese>
+				<French>Echelon Droite</French>
+			</Key>
+			<Key ID="STR_TAG_V">
+				<Original>V</Original>
+				<English>V</English>
+                <Chinesesimp>V字形</Chinesesimp>
+                <Chinese>V字形</Chinese>
+				<French>V</French>
+			</Key>
+			<Key ID="STR_TAG_Line">
+				<Original>Line</Original>
+				<English>Line</English>
+                <Chinesesimp>队列</Chinesesimp>
+                <Chinese>隊列</Chinese>
+				<French>Ligne</French>
+			</Key>
+			<Key ID="STR_TAG_File">
+				<Original>File</Original>
+				<English>File</English>
+                <Chinesesimp>纵列</Chinesesimp>
+                <Chinese>縱列</Chinese>
+				<French>File</French>
+			</Key>
+			<Key ID="STR_TAG_Diamond">
+				<Original>Diamond</Original>
+				<English>Diamond</English>
+                <Chinesesimp>菱形</Chinesesimp>
+                <Chinese>菱形</Chinese>
+				<French>Diamand</French>
+			</Key>
+			<Key ID="STR_TAG_FlyHeight">
+				<Original>Set Fly in Height</Original>
+				<English>Set Fly in Height</English>
+                <Chinesesimp>飞行高度</Chinesesimp>
+                <Chinese>飛行高度</Chinese>
+				<French>Hauteur de vol réglée</French>
+            </Key>
+			<Key ID="STR_TAG_Flyheightset">
+				<Original>Fly in height set to </Original>
+				<English>Fly in height set to </English>
+                <Chinesesimp>飞行高度设置为 </Chinesesimp>
+                <Chinese>飛行高度設置為 </Chinese>
+				<French>Hauteur de vol réglée à </French>
+			</Key>
+			<Key ID="STR_TAG_Meters">
+				<Original> meters</Original>
+				<English> meters</English>
+                <Chinesesimp> 米</Chinesesimp>
+                <Chinese> 米</Chinese>
+				<French> meters</French>
+			</Key>
+			<Key ID="STR_TAG_10meters">
+				<Original>10 meters</Original>
+				<English>10 meters</English>
+                <Chinesesimp>10 米</Chinesesimp>
+                <Chinese>10 米</Chinese>
+				<French>10 meters</French>
+			</Key>
+			<Key ID="STR_TAG_20meters">
+				<Original>20 meters</Original>
+				<English>20 meters</English>
+                <Chinesesimp>20 米</Chinesesimp>
+                <Chinese>20 米</Chinese>
+				<French>20 meters</French>
+			</Key>
+			<Key ID="STR_TAG_40meters">
+				<Original>40 meters</Original>
+				<English>40 meters</English>
+                <Chinesesimp>40 米</Chinesesimp>
+                <Chinese>40 米</Chinese>
+				<French>40 meters</French>
+			</Key>
+			<Key ID="STR_TAG_100meters">
+				<Original>100 meters</Original>
+				<English>100 meters</English>
+                <Chinesesimp>100 米</Chinesesimp>
+                <Chinese>100 米</Chinese>
+				<French>100 meters</French>
+			</Key>
+			<Key ID="STR_TAG_250meters">
+				<Original>250 meters</Original>
+				<English>250 meters</English>
+                <Chinesesimp>250 米</Chinesesimp>
+                <Chinese>250 米</Chinese>
+				<French>250 meters</French>
+			</Key>
+			<Key ID="STR_TAG_500meters">
+				<Original>500 meters</Original>
+				<English>500 meters</English>
+                <Chinesesimp>500 米</Chinesesimp>
+                <Chinese>500 米</Chinese>
+				<French>500 meters</French>
+			</Key>
+			<Key ID="STR_TAG_1000meters">
+				<Original>1000 meters</Original>
+				<English>1000 meters</English>
+                <Chinesesimp>1000 米</Chinesesimp>
+                <Chinese>1000 米</Chinese>
+				<French>1000 meters</French>
+			</Key>
+			<Key ID="STR_TAG_2000meters">
+				<Original>2000 meters</Original>
+				<English>2000 meters</English>
+                <Chinesesimp>2000 米</Chinesesimp>
+                <Chinese>2000 米</Chinese>
+				<French>2000 meters</French>
+			</Key>
+			<Key ID="STR_TAG_3000meters">
+				<Original>3000 meters</Original>
+				<English>3000 meters</English>
+                <Chinesesimp>3000 米</Chinesesimp>
+                <Chinese>3000 米</Chinese>
+				<French>3000 meters</French>
+			</Key>
+			<Key ID="STR_Combat_Mode">
+				<Original>Combat mode set to </Original>
+				<English>Combat mode set to </English>
+                <Chinesesimp>战斗模式设置为 </Chinesesimp>
+                <Chinese>戰鬥模式設置為 </Chinese>
+				<French>Mode Combat réglé sur </French>
+			</Key>
+			<Key ID="STR_Group_CombatMode">
+				<Original>Set Group Combat Mode</Original>
+				<English>Set Group Combat Mode</English>
+                <Chinesesimp>小队战斗模式</Chinesesimp>
+                <Chinese>小隊戰鬥模式</Chinese>
+				<French>Définir le mode Combat en groupe</French>
+			</Key>
+			<Key ID="STR_Never_Fire">
+				<Original>Never fire</Original>
+				<English>Never fire</English>
+                <Chinesesimp>停火</Chinesesimp>
+                <Chinese>停火</Chinese>
+				<French>Ne jamais tiré</French>
+			</Key>
+			<Key ID="STR_Hold_Fire">
+				<Original>Hold fire - defend only</Original>
+				<English>Hold fire - defend only</English>
+                <Chinesesimp>停火 - 防守</Chinesesimp>
+                <Chinese>停火 - 防守</Chinese>
+				<French>Ne tirez pas - défendez seulement</French>
+			</Key>
+			<Key ID="STR_Hold_Fire1">
+				<Original>Hold fire, engage at will</Original>
+				<English>Hold fire, engage at will</English>
+                <Chinesesimp>停火, engage at will</Chinesesimp>
+                <Chinese>停火, engage at will</Chinese>
+				<French>Ne tirez pas, engagez à volonté.</French>
+			</Key>
+			<Key ID="STR_Fire_Atwill">
+				<Original>Fire at will</Original>
+				<English>Fire at will</English>
+                <Chinesesimp>自由交战</Chinesesimp>
+                <Chinese>自由交戰</Chinese>
+				<French>Feu à volonté</French>
+			</Key>
+			<Key ID="STR_Fire_Atwill1">
+				<Original>Fire at will, engage at will</Original>
+				<English>Fire at will, engage at will</English>
+                <Chinesesimp>自由交战, engage at will</Chinesesimp>
+                <Chinese>自由交戰, engage at will</Chinese>
+				<French>Tirez à volonté, engagez à volonté.</French>
+			</Key>
+			<Key ID="STR_Cleared_Waypoints">
+				<Original>All waypoints cleared</Original>
+				<English>All waypoints cleared</English>
+                <Chinesesimp>已清除所有航路点</Chinesesimp>
+                <Chinese>已清除所有航路點</Chinese>
+				<French>Tous les repères de balisage sont effacés.</French>
+			</Key>
+			<Key ID="STR_Confirm_CancelAll">
+				<Original>Confirm Cancel All</Original>
+				<English>Confirm Cancel All</English>
+                <Chinesesimp>确认全部取消</Chinesesimp>
+                <Chinese>確認全部取消</Chinese>
+				<French>Confirmer Annuler tout</French>
+			</Key>
+			<Key ID="STR_Clear_AllWaypoints">
+				<Original>Clear All Waypoints</Original>
+				<English>Clear All Waypoints</English>
+                <Chinesesimp>清除所有航路点</Chinesesimp>
+                <Chinese>清除所有航路點</Chinese>
+				<French>Effacer tous les waypoints</French>
+			</Key>
+			<Key ID="STR_TAG_DELETE">
+				<Original>Press DELETE to Exit Remote View</Original>
+				<English>Press DELETE to Exit Remote View</English>
+                <Chinesesimp>按 DELETE键退出远程视角</Chinesesimp>
+                <Chinese>按 DELETE鍵退出遠程視角</Chinese>
+				<French>Appuyez sur DELETE pour quitter la vue à distance.</French>
+			</Key>
+			<Key ID="STR_RemoteView_Terminated">
+				<Original>Remote View Terminated</Original>
+				<English>Remote View Terminated</English>
+                <Chinesesimp>远程视角终止</Chinesesimp>
+                <Chinese>遠程視角終止</Chinese>
+				<French>Vue à distance terminée</French>
+			</Key>
+			<Key ID="STR_TAG_Remote">
+				<Original>Remote</Original>
+				<English>Remote</English>
+                <Chinesesimp>远程</Chinesesimp>
+                <Chinese>遠程</Chinese>
+				<French>Controle à distance</French>
+			</Key>
+			<Key ID="STR_TAG_RemoteView">
+				<Original>Remote View</Original>
+				<English>Remote View</English>
+                <Chinesesimp>远程视角</Chinesesimp>
+                <Chinese>遠程視角</Chinese>
+				<French>vue à distante</French>
+			</Key>
+			<Key ID="STR_Remote_Failed">
+				<Original>Remote Control Failed: Not Alive</Original>
+				<English>Remote Control Failed: Not Alive</English>
+                <Chinesesimp>远程控制失败: 死体</Chinesesimp>
+                <Chinese>遠程控制失敗: 死體</Chinese>
+				<French>Echec du controle : Pas de vie</French>
+			</Key>
+			<Key ID="STR_RemoteControl_Terminated">
+				<Original>Remote Control Terminated</Original>
+				<English>Remote Control Terminated</English>
+                <Chinesesimp>远程控制中止</Chinesesimp>
+                <Chinese>遠程控制中止</Chinese>
+				<French>Télécommande Terminée</French>
+			</Key>
+			<Key ID="STR_Remote_Control">
+				<Original>Remote Control</Original>
+				<English>Remote Control</English>
+                <Chinesesimp>远程控制</Chinesesimp>
+                <Chinese>遠程控制</Chinese>
+				<French>Controle à distance</French>
+			</Key>
+			<Key ID="STR_Vehicle_Assigned">
+				<Original>Vehicle assigned: </Original>
+				<English>Vehicle assigned: </English>
+                <Chinesesimp>载具已分配: </Chinesesimp>
+                <Chinese>載具已分配: </Chinese>
+				<French>Véhicule affecté : </French>
+			</Key>
+			<Key ID="STR_Vehicle_NoAssigned">
+				<Original>No vehicle assigned</Original>
+				<English>No vehicle assigned</English>
+                <Chinesesimp>无载具可分配</Chinesesimp>
+                <Chinese>無載具可分配</Chinese>
+				<French>Aucun véhicule affecté</French>
+			</Key>
+			<Key ID="STR_Assign_Vehicle">
+				<Original>Assign Vehicle</Original>
+				<English>Assign Vehicle</English>
+                <Chinesesimp>分配载具</Chinesesimp>
+                <Chinese>分配載具</Chinese>
+				<French>Assigner le véhicule</French>
+			</Key>
+			<Key ID="STR_Allvehicles_Unassigned">
+				<Original>All vehicles unassigned</Original>
+				<English>All vehicles unassigned</English>
+                <Chinesesimp>所有载具未分配</Chinesesimp>
+                <Chinese>所有載具未分配</Chinese>
+				<French>Tous les véhicules non affectés</French>
+			</Key>
+			<Key ID="STR_Unassign_AllVehicles">
+				<Original>Unassign All Vehicle(s)</Original>
+				<English>Unassign All Vehicle(s)</English>
+                <Chinesesimp>取消分配（所有）载具</Chinesesimp>
+                <Chinese>取消分配（所有）載具</Chinese>
+				<French>Débarquer du véhicules</French>
+			</Key>
+			<Key ID="STR_Othergroup_Unloaded">
+				<Original> other group(s) unloaded</Original>
+				<English> other group(s) unloaded</English>
+                <Chinesesimp> 其他小队已卸载</Chinesesimp>
+                <Chinese> 其他小隊已卸載</Chinese>
+				<French> autre(s) groupe(s) déchargé(s)</French>
+			</Key>
+			<Key ID="STR_Unloaded_Othergroup">
+				<Original>Unload Other Group(s)</Original>
+				<English>Unload Other Group(s)</English>
+                <Chinesesimp>卸载其他小队</Chinesesimp>
+                <Chinese>卸載其他小隊</Chinese>
+				<French>Décharger Autre(s) groupe(s)</French>
+			</Key>
+			<Key ID="STR_TAG_Land">
+				<Original>Land</Original>
+				<English>Land</English>
+                <Chinesesimp>降落</Chinesesimp>
+                <Chinese>降落</Chinese>
+				<French>Attérir</French>
+			</Key>
+			<Key ID="STR_TAG_Rappel">
+				<Original>Rappel Other Group(s)</Original>
+				<English>Rappel Other Group(s)</English>
+                <Chinesesimp>索降</Chinesesimp>
+                <Chinese>索降</Chinese>
+				<French>Mode Rappel</French>
+			</Key>
+			<Key ID="STR_TAG_AutoCombat">
+				<Original>AutoCombat </Original>
+				<English>AutoCombat </English>
+                <Chinesesimp>自动战斗 </Chinesesimp>
+                <Chinese>自動戰鬥 </Chinese>
+				<French>AutoCombat </French>
+			</Key>
+			<Key ID="STR_TAG_ToggleAutoCombat">
+				<Original>Toggle Auto Combat</Original>
+				<English>Toggle Auto Combat</English>
+                <Chinesesimp>切换自动战斗</Chinesesimp>
+                <Chinese>切換自動戰鬥</Chinese>
+				<French>Commutation du combat automatique</French>
+			</Key>
+			<Key ID="STR_Group_Behaviour">
+				<Original>Set Group Behaviour</Original>
+				<English>Set Group Behaviour</English>
+                <Chinesesimp>小队行动</Chinesesimp>
+                <Chinese>小隊行動</Chinese>
+				<French>Action de l'équipe</French>
+			</Key>
+			<Key ID="STR_TAG_On">
+				<Original>On</Original>
+				<English>On</English>
+                <Chinesesimp>开</Chinesesimp>
+                <Chinese>開</Chinese>
+				<French>On</French>
+			</Key>
+			<Key ID="STR_TAG_Off">
+				<Original>Off</Original>
+				<English>Off</English>
+                <Chinesesimp>关</Chinesesimp>
+                <Chinese>關</Chinese>
+				<French>Off</French>
+			</Key>
+			<Key ID="STR_Delete_Waypoint">
+				<Original>Delete Waypoint</Original>
+				<English>Delete Waypoint</English>
+                <Chinesesimp>删除航路点</Chinesesimp>
+                <Chinese>刪除航路點</Chinese>
+				<French>Suprimer Waypoint</French>
+			</Key>
+			<Key ID="STR_Type_Setto">
+				<Original>Type set to </Original>
+				<English>Type set to </English>
+                <Chinesesimp>类型设置为 </Chinesesimp>
+                <Chinese>類型設置為 </Chinese>
+				<French>Type réglé sur </French>
+			</Key>
+			<Key ID="STR_Loiter_Clockwise">
+				<Original>loiter clockwise</Original>
+				<English>loiter clockwise</English>
+                <Chinesesimp>顺时针盘旋/驻守</Chinesesimp>
+                <Chinese>順時針盤旋</Chinese>
+				<French>loiter clockwise</French>
+			</Key>
+			<Key ID="STR_Loiter_CounterClockwise">
+				<Original>loiter counter clockwise</Original>
+				<English>loiter counter clockwise</English>
+                <Chinesesimp>逆时针盘旋/驻守</Chinesesimp>
+                <Chinese>逆時針盤旋</Chinese>
+				<French>loiter counter clockwise</French>
+			</Key>
+			<Key ID="STR_TAG_At">
+				<Original> at </Original>
+				<English> at </English>
+                <Chinesesimp> 在 </Chinesesimp>
+                <Chinese> 在 </Chinese>
+				<French> à </French>
+			</Key>
+			<Key ID="STR_Meter_Radius">
+				<Original> meter radius</Original>
+				<English> meter radius</English>
+                <Chinesesimp> 米半径</Chinesesimp>
+                <Chinese> 米半徑</Chinese>
+				<French> metres du rayon</French>
+			</Key>
+			<Key ID="STR_Waypoint_Type">
+				<Original>Set Waypoint Type</Original>
+				<English>Set Waypoint Type</English>
+                <Chinesesimp>航路点类型</Chinesesimp>
+                <Chinese>航路點類型</Chinese>
+				<French>Type de point de consigne</French>
+			</Key>
+			<Key ID="STR_TAG_Move">
+				<Original>Move (default)</Original>
+				<English>Move (default)</English>
+                <Chinesesimp>移动 (默认)</Chinesesimp>
+                <Chinese>移動 (默認)</Chinese>
+				<French>Avancer (default)</French>
+			</Key>
+			<Key ID="STR_TAG_Seek">
+				<Original>Seek and Destroy</Original>
+				<English>Seek and Destroy</English>
+                <Chinesesimp>搜索与摧毁</Chinesesimp>
+                <Chinese>搜索與摧毀</Chinese>
+				<French>Chercher et Détruire</French>
+			</Key>
+			<Key ID="STR_TAG_10MRadius">
+				<Original>10M Radius</Original>
+				<English>10M Radius</English>
+                <Chinesesimp>10米半径</Chinesesimp>
+                <Chinese>10米半徑</Chinese>
+				<French>10M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_100MRadius">
+				<Original>100M Radius</Original>
+				<English>100M Radius</English>
+                <Chinesesimp>100米半径</Chinesesimp>
+                <Chinese>100米半徑</Chinese>
+				<French>100M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_250MRadius">
+				<Original>250M Radius</Original>
+				<English>250M Radius</English>
+                <Chinesesimp>250米半径</Chinesesimp>
+                <Chinese>250米半徑</Chinese>
+				<French>250M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_500MRadius">
+				<Original>500M Radius</Original>
+				<English>500M Radius</English>
+                <Chinesesimp>500米半径</Chinesesimp>
+                <Chinese>500米半徑</Chinese>
+				<French>500M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_1000MRadius">
+				<Original>1000M Radius</Original>
+				<English>1000M Radius</English>
+                <Chinesesimp>1000米半径</Chinesesimp>
+                <Chinese>1000米半徑</Chinese>
+				<French>1000M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_2000MRadius">
+				<Original>2000M Radius</Original>
+				<English>2000M Radius</English>
+                <Chinesesimp>2000米半径</Chinesesimp>
+                <Chinese>2000米半徑</Chinese>
+				<French>2000M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_3000MRadius">
+				<Original>3000M Radius</Original>
+				<English>3000M Radius</English>
+                <Chinesesimp>3000米半径</Chinesesimp>
+                <Chinese>3000米半徑</Chinese>
+				<French>3000M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_4000MRadius">
+				<Original>4000M Radius</Original>
+				<English>4000M Radius</English>
+                <Chinesesimp>4000米半径</Chinesesimp>
+                <Chinese>4000米半徑</Chinese>
+				<French>4000M Radius</French>
+			</Key>
+			<Key ID="STR_TAG_LoiterClockwise">
+				<Original>Loiter (Clockwise)</Original>
+				<English>Loiter (Clockwise)</English>
+                <Chinesesimp>盘旋 (顺时针)/驻守</Chinesesimp>
+                <Chinese>盤旋 (順時針)</Chinese>
+				<French>Loiter (Clockwise)</French>
+			</Key>
+			<Key ID="STR_TAG_LoiterCClockwise">
+				<Original>Loiter (C-Clockwise)</Original>
+				<English>Loiter (C-Clockwise)</English>
+                <Chinesesimp>盘旋 (逆时针)/驻守</Chinesesimp>
+                <Chinese>盤旋 (逆時針)</Chinese>
+				<French>Loiter (C-Clockwise)</French>
+			</Key>
+			<Key ID="STR_Waypoint_Flyheight">
+				<Original>Waypoint fly in height set to </Original>
+				<English>Waypoint fly in height set to </English>
+                <Chinesesimp>航路点飞行高度设置为 </Chinesesimp>
+                <Chinese>航路點飛行高度設置為 </Chinese>
+				<French>La hauteur de vol du waypoint est réglée sur </French>
+			</Key>
+			<Key ID="STR_Waypoint_Duration">
+				<Original>Waypoint duration set to </Original>
+				<English>Waypoint duration set to </English>
+                <Chinesesimp>航路点盘旋/驻守持续时间设置为 </Chinesesimp>
+                <Chinese>航路點盤旋持續時間設置為 </Chinese>
+				<French>Durée du waypoint réglée sur </French>
+			</Key>
+			<Key ID="STR_TAG_Mins">
+				<Original> mins</Original>
+				<English> mins</English>
+                <Chinesesimp> 分钟</Chinesesimp>
+                <Chinese> 分鐘</Chinese>
+				<French> mins</French>
+			</Key>
+			<Key ID="STR_TAG_Duration">
+				<Original>Set Duration</Original>
+				<English>Set Duration</English>
+                <Chinesesimp>盘旋/驻守持续时间</Chinesesimp>
+                <Chinese>設定持續時間</Chinese>
+				<French>Définir la durée</French>
+			</Key>
+			<Key ID="STR_TAG_None">
+				<Original>None</Original>
+				<English>None</English>
+                <Chinesesimp>无</Chinesesimp>
+                <Chinese>無</Chinese>
+				<French>Aucun</French>
+			</Key>
+			<Key ID="STR_TAG_1Min">
+				<Original>1 Min</Original>
+				<English>1 Min</English>
+                <Chinesesimp>1分钟</Chinesesimp>
+                <Chinese>1分鐘</Chinese>
+				<French>1 Min</French>
+			</Key>
+			<Key ID="STR_TAG_2Min">
+				<Original>2 Min</Original>
+				<English>2 Min</English>
+                <Chinesesimp>2分钟</Chinesesimp>
+                <Chinese>2分鐘</Chinese>
+				<French>2 Min</French>
+			</Key>
+			<Key ID="STR_TAG_3Min">
+				<Original>3 Min</Original>
+				<English>3 Min</English>
+                <Chinesesimp>3分钟</Chinesesimp>
+                <Chinese>3分鐘</Chinese>
+				<French>3 Min</French>
+			</Key>
+			<Key ID="STR_TAG_4Min">
+				<Original>4 Min</Original>
+				<English>4 Min</English>
+                <Chinesesimp>4分钟</Chinesesimp>
+                <Chinese>4分鐘</Chinese>
+				<French>4 Min</French>
+			</Key>
+			<Key ID="STR_TAG_5Min">
+				<Original>5 Min</Original>
+				<English>5 Min</English>
+                <Chinesesimp>5分钟</Chinesesimp>
+                <Chinese>5分鐘</Chinese>
+				<French>5 Min</French>
+			</Key>
+			<Key ID="STR_TAG_10Min">
+				<Original>10 Min</Original>
+				<English>10 Min</English>
+                <Chinesesimp>10分钟</Chinesesimp>
+                <Chinese>10分鐘</Chinese>
+				<French>10 Min</French>
+			</Key>
+			<Key ID="STR_TAG_20Min">
+				<Original>20 Min</Original>
+				<English>20 Min</English>
+                <Chinesesimp>20分钟</Chinesesimp>
+                <Chinese>20分鐘</Chinese>
+				<French>20 Min</French>
+			</Key>
+	</Package>
+</Project>
